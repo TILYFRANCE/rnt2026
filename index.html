@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camp Scout</title>
+  <title>RNT 2026</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <script src="_sdk/element_sdk.js"></script>
@@ -20,14 +20,14 @@
         <div class="flex items-center gap-3">
           <a href="index.html">
             <span class="text-2xl">⚜️</span>
-            <span id="nav-title" class="font-heading font-bold text-lg">RNT 2026 : Ephphatha</span>
+            <span id="nav-title" class="font-heading font-bold text-lg">RNT 2026</span>
           </a>
         </div>
         <div class="hidden md:flex items-center gap-8">
-          <a href="#about" class="nav-link text-sm font-semibold tracking-wide uppercase">À propos</a>
-          <a href="#info" class="nav-link text-sm font-semibold tracking-wide uppercase">Infos</a>
-          <a href="autres/lieu-rnt.html" class="nav-link text-sm font-semibold tracking-wide uppercase">Lieu</a>
-          <a href="tily-france/tily-france.html" class="nav-link text-sm font-semibold tracking-wide uppercase">Tily France</a>
+          <a href="#about" class="nav-link text-sm font-semibold tracking-wide uppercase">Notre camp</a>
+          <a href="#activities" class="nav-link text-sm font-semibold tracking-wide uppercase">Les sous-camps</a>
+          <a href="#info" class="nav-link text-sm font-semibold tracking-wide uppercase">Les infos pratiques</a>
+          <a href="autres/lieu-rnt.html" class="nav-link text-sm font-semibold tracking-wide uppercase">Le lieu</a>
           <a href="#contact" class="nav-link text-sm font-semibold tracking-wide uppercase">Contact</a>
         </div>
         <button id="mobile-menu-btn" class="md:hidden" aria-label="Menu">
@@ -35,11 +35,10 @@
         </button>
       </div>
       <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 flex flex-col gap-3">
-        <a href="#about" class="text-sm font-semibold uppercase">À propos</a>
-        <a href="#activities" class="text-sm font-semibold uppercase">Activités</a>
-        <a href="#info" class="text-sm font-semibold uppercase">Infos</a>
-        <a href="autres/lieu-rnt.html" class="text-sm font-semibold uppercase">Lieu</a>
-        <a href="tily-france/tily-france.html" class="text-sm font-semibold uppercase">Tily France</a>
+        <a href="#about" class="text-sm font-semibold uppercase">Notre camp</a>
+        <a href="#activities" class="text-sm font-semibold uppercase">Les sous-camps</a>
+        <a href="#info" class="text-sm font-semibold uppercase">Les infos pratiques</a>
+        <a href="autres/lieu-rnt.html" class="text-sm font-semibold uppercase">Le lieu</a>
         <a href="#contact" class="text-sm font-semibold uppercase">Contact</a>
       </div>
     </nav>
@@ -49,12 +48,12 @@
         <div class="compass-icon text-5xl mb-6 anim-fade-in">
           🧭
         </div>
-        <h1 id="hero-title" class="font-heading font-900 text-4xl md:text-6xl lg:text-7xl leading-tight mb-2 anim-fade-up delay-1">RNT 2026 : Ephphatha</h1>
+        <h1 id="hero-title" class="font-heading font-900 text-4xl md:text-6xl lg:text-7xl leading-tight mb-2 anim-fade-up delay-1">“Ephphatha, c’est-à-dire ouvre-toi !”</h1>
         <div class="mb-6 anim-fade-up delay-2 inline-block px-6 py-2 rounded-full font-bold text-sm tracking-widest hero-edition-badge">
-          🌯 25ème ÉDITION
+          🌯 RNT 25 ans : édition anniversaire
         </div>
         <p id="hero-tagline" class="text-xl md:text-2xl font-light mb-4 anim-fade-up delay-2">L'aventure commence ici</p>
-        <p id="hero-dates" class="text-lg md:text-xl mb-6 anim-fade-up delay-2">Du 1 au 3 Mai 2026</p>
+        <p id="hero-dates" class="text-lg md:text-xl mb-6 anim-fade-up delay-2">Du 1 au 3 Mai 2026 - Wiltz Luxembourg</p>
         <div id="countdown-container" class="mb-10 anim-fade-up delay-2">
           
           <div id="countdown" class="grid grid-cols-4 gap-3 justify-center max-w-sm mx-auto">
@@ -79,13 +78,6 @@
         <div id="registrations-closed" class="hidden mb-10 anim-fade-up delay-2">
           <p class="text-xl font-bold">Les inscriptions sont terminées</p>
         </div>
-        <div class="flex justify-center gap-6 mt-16 anim-fade-up delay-4 trees-row">
-          <span class="text-3xl">🌲</span>
-          <span class="text-2xl mt-2">🌲</span>
-          <span class="text-4xl">🌲</span>
-          <span class="text-2xl mt-2">🌲</span>
-          <span class="text-3xl">🌲</span>
-        </div>
       </div>
       <!-- wave divider -->
       <svg class="absolute bottom-0 left-0 w-full wave-divider" viewbox="0 0 1440 80" preserveaspectratio="none">
@@ -103,23 +95,23 @@
               <span class="divider-line"></span>
             </div>
             <h2 id="about-title" class="font-heading font-bold text-3xl md:text-5xl mb-6">Notre Camp</h2>
-            <p id="about-text" class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">Deux semaines d'aventure en pleine nature au cœur des Ardennes. Entre randonnées, veillées autour du feu et jeux de piste, nos scouts vivent des moments inoubliables qui forgent l'amitié et le caractère.</p>
+            <p id="about-text" class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">Depuis 25 ans, une histoire se construit grâce à celles et ceux qui ont transmis, partagé et fait grandir le mouvement. Cette RNT est l’occasion de se nourrir de cet héritage, de le faire vivre aujourd’hui et de préparer ensemble l’avenir. “Ephphatha – ouvre-toi” : une invitation à s’ouvrir, à recevoir, à transmettre… et à continuer d’écrire la suite de l’aventure.</p>
           </div>
           <div class="grid md:grid-cols-3 gap-8">
+            <div class="card-hover rounded-2xl p-8 text-center anim-scale-in delay-1 card">
+              <div class="text-4xl mb-4">💪</div>
+              <h3 class="font-heading font-bold text-xl mb-2">3 jours pour vivre l’aventure</h3>
+              <p class="text-sm leading-relaxed">Trois jours pour se retrouver, partager des moments simples et forts, rire, célébrer… et créer ensemble des souvenirs qui resteront longtemps. Une RNT comme on les aime : avec du jeu, de la joie, du sens… et surtout, le plaisir d’être ensemble. Au programme : Rassemblement, grand jeu intergénérationnel autour des 25 ans, culte de célébration des 25 ans, exploration et visite des villes alentours, veillée “Lights On Festival”, ouverture de la célébration des 80 ans des Louveteaux malgaches et des 80 ans des Aînés malgaches.</p>
+            </div>
             <div class="card-hover rounded-2xl p-8 text-center anim-scale-in card">
               <div class="text-4xl mb-4">🌍</div>
               <h3 class="font-heading font-bold text-xl mb-2">Impact écolo</h3>
-              <p class="text-sm leading-relaxed">Un camp pensé de manière responsable : zéro déchet, énergies renouvelables, et sensibilisation à la protection de la nature</p>
-            </div>
-            <div class="card-hover rounded-2xl p-8 text-center anim-scale-in delay-1 card">
-              <div class="text-4xl mb-4">💪</div>
-              <h3 class="font-heading font-bold text-xl mb-2">Pourquoi venir</h3>
-              <p class="text-sm leading-relaxed">Pour se découvrir soi-même, grandir spirituellement, nouer des liens fraternels et repartir transformé</p>
+              <p class="text-sm leading-relaxed">Un camp pensé de manière responsable : bonne gestion des déchets, suivi et respect du tri, alimentation zéro déchet et anti-gaspi, bonne gestion du matériel et de l'énérgie.</p>
             </div>
             <div class="card-hover rounded-2xl p-8 text-center anim-scale-in delay-2 card">
               <div class="text-4xl mb-4">✨</div>
-              <h3 class="font-heading font-bold text-xl mb-2">Nos valeurs</h3>
-              <p class="text-sm leading-relaxed">Fraternité, authenticité, engagement spirituel et esprit d'aventure</p>
+              <h3 class="font-heading font-bold text-xl mb-2">« Ephphatha » — Ouvre-toi.</h3>
+              <p class="text-sm leading-relaxed">Un appel à ouvrir son cœur, à rencontrer l’autre, à accueillir Dieu et à vivre pleinement l’aventure scoute. Pendant ces trois jours, la RNT sera l’occasion de vivre cet Ephphatha, ensemble.</p>
             </div>
           </div>
         </div>
@@ -134,7 +126,7 @@
               <span class="text-2xl">🎯</span>
               <span class="divider-line"></span>
             </div>
-            <h2 class="font-heading font-bold text-3xl md:text-5xl mb-4">À qui s'adresse ce camp</h2>
+            <h2 class="font-heading font-bold text-3xl md:text-5xl mb-4">Les sous-camps</h2>
           </div>
           <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
             <div class="card-hover rounded-xl p-6 border flex items-start gap-4 cursor-pointer card" id="cadette-btn">
@@ -142,7 +134,8 @@
               <div>
                 <a href="activites/branche-cadette.html" class="block">
                   <h3 class="font-heading font-bold text-lg mb-1">Branche Cadette</h3>
-                  <p class="text-sm">8-12 ans — Premières aventures et amitiés</p>
+                  <p class="text-sm">8-12 ans</p>
+                  <p class="text-sm">110 campeurs inscrits</p>
                 </a>
               </div>
             </div>
@@ -151,7 +144,8 @@
               <div>
                 <a href="activites/branche-moyenne.html" class="block">
                   <h3 class="font-heading font-bold text-lg mb-1">Branche Moyenne</h3>
-                  <p class="text-sm">12-15 ans — Défis et responsabilités</p>
+                  <p class="text-sm">12-15 ans</p>
+                  <p class="text-sm">138 campeurs inscrits</p>
                 </a>
               </div>
             </div>
@@ -160,7 +154,8 @@
               <div>
                 <a href="activites/branche-ainee.html" class="block">
                   <h3 class="font-heading font-bold text-lg mb-1">Branche Aînée</h3>
-                  <p class="text-sm">15-17 ans — Leadership et engagement</p>
+                  <p class="text-sm">15-17 ans</p>
+                  <p class="text-sm">36 campeurs inscrits</p>
                 </a>
               </div>
             </div>
@@ -169,7 +164,7 @@
               <div>
                 <a href="activites/anciens-parents.html" class="block">
                   <h3 class="font-heading font-bold text-lg mb-1">Anciens &amp; Parents</h3>
-                  <p class="text-sm">18+ ans — Accompagner l'aventure</p>
+                  <p class="text-sm">90 campeurs inscrits</p>
                 </a>
               </div>
             </div>
@@ -185,7 +180,8 @@
               <span class="text-2xl">📋</span>
               <span class="divider-line"></span>
             </div>
-            <h2 id="info-title" class="font-heading font-bold text-3xl md:text-5xl">Infos Pratiques</h2>
+            <h2 id="info-title" class="font-heading font-bold text-3xl md:text-5xl">Infos Pratiques pour l'arrivée</h2>
+            <p id="about-text" class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">L'heure d’accueil est de 7h à 9h15. Pendant ce temps, vous pouvez : </p>
           </div>
           <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div class="rounded-2xl p-8 card-hover card">
@@ -193,21 +189,19 @@
                 <div class="w-10 h-10 rounded-full flex items-center justify-center card-icon">
                   <i data-lucide="calendar"></i>
                 </div>
-                <h3 class="font-heading font-bold text-lg">Dates</h3>
+                <h3 class="font-heading font-bold text-lg">Profiter d’un petit-déjeuner convivial et zéro déchet</h3>
               </div>
-              <p class="info-card-primary">Du 1er au 3 mai 2026</p>
-              <p class="text-sm mt-1 info-card-secondary">Rendez-vous à 9h le jour du départ</p>
+              <p class="text-sm mt-1 info-card-secondary">Apportez votre propre mug/tasse réutilisable (ou gourde isotherme) pour les boissons chaudes, on évite les gobelets jetables !</p>
             </div>
             <div class="rounded-2xl p-8 card-hover card">
               <div class="flex items-center gap-3 mb-5">
                 <div class="w-10 h-10 rounded-full flex items-center justify-center card-icon">
                   <i data-lucide="map-pin"></i>
                 </div>
-                <h3 class="font-heading font-bold text-lg">Lieu</h3>
+                <h3 class="font-heading font-bold text-lg">Finaliser votre arrivée administrative</h3>
               </div>
               <a href="autres/lieu-rnt.html" class="block">
-                <p class="info-card-primary">Château de Wiltz</p>
-                <p class="text-sm mt-1 info-card-secondary">Rue du Château, 1, L-9516 Wiltz, Luxembourg</p>
+                <p class="text-sm mt-1 info-card-secondary">1 personne par Groupe Local doit récupérer le kit d’accueil : badges, bracelets, guide de camp et plan du site</p>
               </a>
             </div>
             <div class="rounded-2xl p-8 card-hover card">
@@ -215,20 +209,18 @@
                 <div class="w-10 h-10 rounded-full flex items-center justify-center card-icon">
                   <i data-lucide="users"></i>
                 </div>
-                <h3 class="font-heading font-bold text-lg">Accueil</h3>
+                <h3 class="font-heading font-bold text-lg">Déposer le matériel du groupe local</h3>
               </div>
-              <p class="info-card-primary">A partir de ...</p>
-              <p class="text-sm mt-1 info-card-secondary">.....</p>
+              <p class="text-sm mt-1 info-card-secondary">1 responsable par Groupe Local, avec les petits matos bien étiquetés pour éviter les mélanges</p>
             </div>
             <div class="rounded-2xl p-8 card-hover card">
               <div class="flex items-center gap-3 mb-5">
                 <div class="w-10 h-10 rounded-full flex items-center justify-center card-icon">
                   <i data-lucide="backpack"></i>
                 </div>
-                <h3 class="font-heading font-bold text-lg">À emporter</h3>
+                <h3 class="font-heading font-bold text-lg">Important !</h3>
               </div>
-              <p class="info-card-primary">Sac de couchage, gourde, vêtements chauds</p>
-              <p class="text-sm mt-1 info-card-secondary">Liste complète envoyée après inscription</p>
+              <p class="text-sm mt-1 info-card-secondary">À partir de 9h, aucune voiture ne sera autorisée à circuler sur le lieu de camp. Tous les campeurs et leurs affaires doivent être déposés avant cette heure. Fin du petit-déjeuner à 9h15 – ne tardez pas !</p>
             </div>
           </div>
         </div>
@@ -243,28 +235,26 @@
               <span class="text-2xl">🎉</span>
               <span class="divider-line"></span>
             </div>
-            <h2 class="font-heading font-bold text-3xl md:text-5xl mb-4">25 Ans d'Aventure !</h2>
-            <p class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-8 subtitle">Cette année, nous célébrons un quart de siècle d'excellence, de fraternité et de transformation. Depuis 2001, la RNT a marqué la vie de plus de 50 000 scouts en Belgique et au-delà.</p>
-          </div>
+            <h2 class="font-heading font-bold text-3xl md:text-5xl mb-4">Les chiffres clés</h2>
+            </div>
           <div class="grid md:grid-cols-3 gap-8 mb-10">
+            <div class="card-hover rounded-2xl p-8 text-center anim-scale-in delay-2 card">
+              <div class="text-4xl mb-4">⭐</div>
+              <h3 class="font-heading font-bold text-2xl mb-2">25 années d'histoire</h3>
+              <p class="text-sm leading-relaxed">Un anniversaire qui mérite d'être célébré en grand</p>
+            </div>
             <div class="card-hover rounded-2xl p-8 text-center anim-scale-in card">
               <div class="text-4xl mb-4">👥</div>
-              <h3 class="font-heading font-bold text-2xl mb-2">50 000+</h3>
-              <p class="text-sm leading-relaxed">Scouts impactés</p>
+              <h3 class="font-heading font-bold text-2xl mb-2">374</h3>
+              <p class="text-sm leading-relaxed">Participants attendus</p>
             </div>
             <div class="card-hover rounded-2xl p-8 text-center anim-scale-in delay-1 card">
               <div class="text-4xl mb-4">🌍</div>
-              <h3 class="font-heading font-bold text-2xl mb-2">25</h3>
-              <p class="text-sm leading-relaxed">Années de tradition</p>
+              <h3 class="font-heading font-bold text-2xl mb-2">42</h3>
+              <p class="text-sm leading-relaxed">Bénévoles mobilisés</p>
+              <p class="text-sm leading-relaxed">La RNT, c’est avant tout des personnes qui s’engagent. Des bénévoles qui donnent de leur temps, de leur énergie et beaucoup d’eux-mêmes pour que tout puisse avoir lieu. Avant la RNT, ils préparent, organisent et pensent aux moindres détails.
+              Pendant, ils sont là partout à la fois : accueillir, installer, cuisiner, animer, aider, s’adapter. Et après, ils sont encore présents pour ranger, démonter et aller jusqu’au bout. Être bénévole, c’est donner… mais c’est aussi recevoir beaucoup, à travers les rencontres, les moments partagés et les souvenirs créés ensemble.</p>
             </div>
-            <div class="card-hover rounded-2xl p-8 text-center anim-scale-in delay-2 card">
-              <div class="text-4xl mb-4">⭐</div>
-              <h3 class="font-heading font-bold text-2xl mb-2">Infini</h3>
-              <p class="text-sm leading-relaxed">Souvenirs précieux</p>
-            </div>
-          </div>
-          <div class="text-center">
-            <a href="tily-france/historique-rnt.html" class="btn-scout">📖 Raconte-moi ces 25 ans</a>
           </div>
         </div>
       </section>

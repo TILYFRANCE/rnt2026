@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camp Scout</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="../_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&amp;family=Source+Sans+3:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/style-generated.css">
+  <script src="../_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="../_sdk/script.js" type="text/javascript"></script>
+</head>
+ <body class="h-full font-body">
+    <div id="app-wrapper" class="w-full h-full overflow-auto">
+      <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+          <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <a href="../index.html">
+                <span class="text-2xl">⚜️</span>
+                <span id="nav-title" class="font-heading font-bold text-lg">RNT 2026 : Ephphatha</span>
+              </a>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+              <a href="../index.html#about" class="nav-link text-sm font-semibold tracking-wide uppercase">À propos</a>
+              <a href="../index.html#info" class="nav-link text-sm font-semibold tracking-wide uppercase">Infos</a>
+              <a href="../autres/lieu-rnt.html" class="nav-link text-sm font-semibold tracking-wide uppercase">Lieu</a>
+              <a href="../tily-france/tily-france.html" class="nav-link text-sm font-semibold tracking-wide uppercase">Tily France</a>
+              <a href="../index.html#contact" class="nav-link text-sm font-semibold tracking-wide uppercase">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden" aria-label="Menu">
+              <i data-lucide="menu"></i>
+            </button>
+          </div>
+          <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 flex flex-col gap-3">
+            <a href="../index.html#about" class="text-sm font-semibold uppercase">À propos</a>
+            <a href="../index.html#activities" class="text-sm font-semibold uppercase">Activités</a>
+            <a href="../index.html#info" class="text-sm font-semibold uppercase">Infos</a>
+            <a href="../autres/lieu-rnt.html" class="text-sm font-semibold uppercase">Lieu</a>
+            <a href="../tily-france/tily-france.html" class="text-sm font-semibold uppercase">Tily France</a>
+            <a href="../index.html#contact" class="text-sm font-semibold uppercase">Contact</a>
+          </div>
+      </nav>
+      <main class="flex-1 py-20 px-6">
+        <div  class="max-w-5xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="text-6xl mb-6">👧</div>
+            <h1 class="font-heading font-bold text-5xl mb-4" style="color: var(--color-dark)">Branche Cadette</h1>
+            <p class="text-xl" style="color:#3d5a3f;">8-12 ans — Premières aventures et amitiés</p>
+          </div>
+          <div class="space-y-8"><!-- Programme -->
+            <section class="rounded-2xl p-10 branche-section">
+              <h2 class="font-heading font-bold text-3xl mb-6" style="color:#1b361d;">📅 Programme du Camp</h2>
+              <div class="space-y-4">
+              <div class="p-4 border-l-4 rounded-lg programme-item">
+                <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Jour 1 : Accueil &amp; Installation</h3>
+                <p style="color:#3d5a3f;">Arrivée, installation des tentes, premiers jeux de connaissance et veillée d'ouverture</p>
+              </div>
+              <div class="p-4 border-l-4 rounded-lg programme-item">
+                <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Jour 2-3 : Découverte et Randonnées</h3>
+                <p style="color:#3d5a3f;">Randonnées pédestres, jeux de piste, activités de team-building et exploration du domaine</p>
+              </div>
+              <div class="p-4 border-l-4 rounded-lg programme-item">
+                <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Jour 4-5 : Ateliers Créatifs</h3>
+                <p style="color:#3d5a3f;">Ateliers de bricolage, peinture, jeux en grand groupe et compétitions amicales</p>
+              </div>
+              <div class="p-4 border-l-4 rounded-lg programme-item">
+                <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Jour 6 : Veillée Spéciale</h3>
+                <p style="color:#3d5a3f;">Feu de camp géant, chants scouts, histoires et moments de communion fraternelle</p>
+              </div>
+              <div class="p-4 border-l-4 rounded-lg programme-item">
+                <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Jour 7 : Cérémonie de Clôture</h3>
+                <p style="color:#3d5a3f;">Bilan du camp, partage des souvenirs, adieux et retour avec des étoiles plein les yeux</p>
+              </div>
+              </div>
+            </section><!-- Affaires à emporter -->
+            <section class="rounded-2xl p-10 branche-section">
+              <h2 class="font-heading font-bold text-3xl mb-6" style="color:#1b361d;">🎒 Affaires à Emporter</h2>
+              <div class="grid md:grid-cols-2 gap-4">
+              <div class="p-4 rounded-lg branche-neccessity">
+                <h3 class="font-heading font-bold mb-3" style="color:#1b361d;">Indispensable</h3>
+                <ul class="space-y-2 text-sm" style="color:#3d5a3f;">
+                <li>✓ Sac de couchage (3-4 saisons)</li>
+                <li>✓ Matelas de sol</li>
+                <li>✓ Vêtements chauds et imperméables</li>
+                <li>✓ Chaussures de randonnée</li>
+                <li>✓ Gourde réutilisable</li>
+                <li>✓ Lampe de poche ou frontale</li>
+                <li>✓ Produits d'hygiène personnelle</li>
+                <li>✓ Médicaments personnels</li>
+                </ul>
+              </div>
+              <div class="p-4 rounded-lg branche-neccessity">
+                <h3 class="font-heading font-bold mb-3" style="color:#1b361d;">Utile</h3>
+                <ul class="space-y-2 text-sm" style="color:#3d5a3f;">
+                <li>✓ Carnet et crayons</li>
+                <li>✓ Appareil photo</li>
+                <li>✓ Jeux de société de poche</li>
+                <li>✓ Livres ou BD</li>
+                <li>✓ Musique (casque audio)</li>
+                <li>✓ Crème solaire et chapeau</li>
+                <li>✓ Répellent anti-moustiques</li>
+                <li>✓ Petits en-cas favoris</li>
+                </ul>
+              </div>
+            </div>
+            </section><!-- Responsables -->
+            <section class="rounded-2xl p-10 branche-section">
+              <h2 class="font-heading font-bold text-3xl mb-6" style="color:#1b361d;">👥 Responsables de Branche</h2>
+              <div class="grid md:grid-cols-3 gap-6">
+              <div class="text-center">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #c19a4d, #e8dcc8); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                👩‍🏫
+                </div>
+                <h3 class="font-heading font-bold" style="color:#1b361d;">Sophie Legrand</h3>
+                <p class="text-sm" style="color:#3d5a3f;">Responsable Cadettes</p>
+                <p class="text-xs mt-2" style="color:#6b7c6c;">10 ans d'expérience scouts</p>
+              </div>
+              <div class="text-center">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #c19a4d, #e8dcc8); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                🧑‍🏫
+                </div>
+                <h3 class="font-heading font-bold" style="color:#1b361d;">Marc Dubois</h3>
+                <p class="text-sm" style="color:#3d5a3f;">Sous-responsable</p>
+                <p class="text-xs mt-2" style="color:#6b7c6c;">Animateur depuis 8 ans</p>
+              </div>
+              <div class="text-center">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #c19a4d, #e8dcc8); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                👨‍⚕️
+                </div>
+                <h3 class="font-heading font-bold" style="color:#1b361d;">Joël Laurent</h3>
+                <p class="text-sm" style="color:#3d5a3f;">Animateur Activités</p>
+                <p class="text-xs mt-2" style="color:#6b7c6c;">Spécialiste jeux &amp; aventure</p>
+              </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      
+   
+      <!-- Footer -->
+      <footer class="py-8 px-6 text-center">
+        <p class="text-sm">© 2026 Tily France — Toujours prêt ! ⚜️</p>
+      </footer>
+  </div>
+  <script>
+    // Mobile menu
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('#mobile-menu a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  
+    lucide.createIcons();
+  </script>
+ </body>
+</html>

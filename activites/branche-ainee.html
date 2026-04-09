@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camp Scout</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="../_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&amp;family=Source+Sans+3:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/style-generated.css">
+  <script src="../_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="../_sdk/script.js" type="text/javascript"></script>
+</head>
+<body class="h-full font-body">
+    <div id="app-wrapper" class="w-full h-full overflow-auto">
+      <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+          <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <a href="../index.html">
+                <span class="text-2xl">⚜️</span>
+                <span id="nav-title" class="font-heading font-bold text-lg">RNT 2026 : Ephphatha</span>
+              </a>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+              <a href="../index.html#about" class="nav-link text-sm font-semibold tracking-wide uppercase">À propos</a>
+              <a href="../index.html#info" class="nav-link text-sm font-semibold tracking-wide uppercase">Infos</a>
+              <a href="../autres/lieu-rnt.html" class="nav-link text-sm font-semibold tracking-wide uppercase">Lieu</a>
+              <a href="../tily-france/tily-france.html" class="nav-link text-sm font-semibold tracking-wide uppercase">Tily France</a>
+              <a href="../index.html#contact" class="nav-link text-sm font-semibold tracking-wide uppercase">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden" aria-label="Menu">
+              <i data-lucide="menu"></i>
+            </button>
+          </div>
+          <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 flex flex-col gap-3">
+            <a href="../index.html#about" class="text-sm font-semibold uppercase">À propos</a>
+            <a href="../index.html#activities" class="text-sm font-semibold uppercase">Activités</a>
+            <a href="../index.html#info" class="text-sm font-semibold uppercase">Infos</a>
+            <a href="../autres/lieu-rnt.html" class="text-sm font-semibold uppercase">Lieu</a>
+            <a href="../tily-france/tily-france.html" class="text-sm font-semibold uppercase">Tily France</a>
+            <a href="../index.html#contact" class="text-sm font-semibold uppercase">Contact</a>
+          </div>
+      </nav>
+       <main class="flex-1 py-20 px-6">
+        <div  class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="text-6xl mb-6">
+                👨
+                </div>
+                <h1 class="font-heading font-bold text-5xl mb-4" style="color:#1b361d;">Branche Aînée</h1>
+                <p class="text-xl" style="color:#3d5a3f;">15-17 ans — Leadership et engagement</p>
+            </div>
+            <div class="space-y-8"><!-- Programme -->
+                <section class="rounded-2xl p-10 branche-section">
+                    <h2 class="font-heading font-bold text-3xl mb-6" style="color:#1b361d;">📅 Programme du Camp</h2>
+                    <div class="space-y-4">
+                        <div class="p-4 border-l-4 rounded-lg programme-item">
+                        <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Jour 1 : Intégration &amp; Vision</h3>
+                        <p style="color:#3d5a3f;">Bienvenue des aînés, présentation du programme leadership et du projet collectif</p>
+                        </div>
+                        <div class="p-4 border-l-4 rounded-lg programme-item">
+                        <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Jour 2-3 : Formation &amp; Ateliers</h3>
+                        <p style="color:#3d5a3f;">Formations en prise de décision, gestion de crises, développement personnel et communication</p>
+                        </div>
+                        <div class="p-4 border-l-4 rounded-lg programme-item">
+                            <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Jour 4-5 : Grands Défis</h3>
+                            <p style="color:#3d5a3f;">Expédition multi-jours en nature, projets communautaires et responsabilités d'animation</p>
+                        </div>
+                        <div class="p-4 border-l-4 rounded-lg programme-item">
+                            <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Jour 6 : Veillée Réflexive</h3>
+                            <p style="color:#3d5a3f;">Partage philosophique, débats citoyens et engagement envers le futur</p>
+                        </div>
+                        <div class="p-4 border-l-4 rounded-lg programme-item">
+                            <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Jour 7 : Cérémonie &amp; Serment</h3>
+                            <p style="color:#3d5a3f;">Engagement solennel, présentation du projet RNT et clôture transformatrice</p>
+                        </div>
+                    </div>
+                </section><!-- Affaires à emporter -->
+                <section class="rounded-2xl p-10 branche-section">
+                    <h2 class="font-heading font-bold text-3xl mb-6" style="color:#1b361d;">🎒 Affaires à Emporter</h2>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-lg branche-neccessity">
+                        <h3 class="font-heading font-bold mb-3" style="color:#1b361d;">Obligatoire</h3>
+                        <ul class="space-y-2 text-sm" style="color:#3d5a3f;">
+                            <li>✓ Sac à dos de trekking 40-50L</li>
+                            <li>✓ Sac de couchage 3-4 saisons</li>
+                            <li>✓ Tente individuelle (si expédition)</li>
+                            <li>✓ Vêtements techniques &amp; imperméables</li>
+                            <li>✓ Chaussures de randonnée solides</li>
+                            <li>✓ Gourde ou système d'hydratation</li>
+                            <li>✓ Lampe frontale puissante</li>
+                            <li>✓ Couteau suisse ou multi-outil</li>
+                            <li>✓ Trousse de premiers soins compète</li>
+                            <li>✓ Produits d'hygiène personnelle</li>
+                        </ul>
+                        </div>
+                        <div class="p-4 rounded-lg branche-neccessity">
+                            <h3 class="font-heading font-bold mb-3" style="color:#1b361d;">Fortement recommandé</h3>
+                            <ul class="space-y-2 text-sm" style="color:#3d5a3f;">
+                                <li>✓ Montre GPS &amp; compas</li>
+                                <li>✓ Appareil photo professionnel</li>
+                                <li>✓ Carnet de réflexion</li>
+                                <li>✓ Équipement escalade (mousquetons, corde)</li>
+                                <li>✓ Chaussures de rechange</li>
+                                <li>✓ Crème solaire SPF 50+</li>
+                                <li>✓ Lunettes polarisées</li>
+                                <li>✓ Maillot de bain &amp; séchage rapide</li>
+                                <li>✓ Batterie externe</li>
+                                <li>✓ Tablette pour documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section><!-- Responsables -->
+                <section class="rounded-2xl p-10 branche-section">
+                    <h2 class="font-heading font-bold text-3xl mb-6" style="color:#1b361d;">👥 Responsables de Branche</h2>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                        <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #c19a4d, #e8dcc8); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                        🧑‍🎓
+                        </div>
+                        <h3 class="font-heading font-bold" style="color:#1b361d;">Adrien Dupont</h3>
+                        <p class="text-sm" style="color:#3d5a3f;">Responsable Aînés</p>
+                        <p class="text-xs mt-2" style="color:#6b7c6c;">Formateur leadership scout</p>
+                        </div>
+                        <div class="text-center">
+                        <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #c19a4d, #e8dcc8); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                        👩‍🔬
+                        </div>
+                        <h3 class="font-heading font-bold" style="color:#1b361d;">Jessica Leclerc</h3>
+                        <p class="text-sm" style="color:#3d5a3f;">Sous-responsable</p>
+                        <p class="text-xs mt-2" style="color:#6b7c6c;">Coordinatrice projets sociaux</p>
+                        </div>
+                        <div class="text-center">
+                        <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #c19a4d, #e8dcc8); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                        🧗‍♂️
+                        </div>
+                        <h3 class="font-heading font-bold" style="color:#1b361d;">Lucas Mercier</h3>
+                        <p class="text-sm" style="color:#3d5a3f;">Animateur Expéditions</p>
+                        <p class="text-xs mt-2" style="color:#6b7c6c;">Guide nature &amp; montagne</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+     </div>
+    </main>
+    <footer class="py-8 px-6 text-center">
+        <p class="text-sm">© 2026 Tily France — Toujours prêt ! ⚜️</p>
+    </footer>
+    </div>
+    <script>
+    // Mobile menu
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('#mobile-menu a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  
+    lucide.createIcons();
+  </script>
+</body>
+</html>

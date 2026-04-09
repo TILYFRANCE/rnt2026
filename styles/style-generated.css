@@ -1,0 +1,399 @@
+/* Color Variables */
+:root {
+  --color-primary: #F6EECD;
+  --color-dark: #C6743E;
+  --color-light: #E1C789;
+  --color-white: #fff;
+  --color-text: #3d5a3f;
+  --color-dark-bg: #3F756C;
+  --color-accent-light: rgba(232, 220, 200, 0.7);
+  --color-accent-lighter: rgba(232, 220, 200, 0.6);
+  --color-accent-lightest: rgba(232, 220, 200, 0.4);
+  --color-primary-light: rgba(193, 154, 77, 0.2);
+  --color-divider: #c19a4d;
+  --color-text-light: rgba(232, 220, 200, 0.8);
+  --color-dark-light: #f9f5e463;
+  --color-card-bg: rgba(232, 220, 200, 0.06);
+  --color-card-border: rgba(193, 154, 77, 0.2);
+  --box-shadow: 0 4px 20px rgba(27, 54, 29, 0.08);
+}
+
+/* Navigation */
+#main-nav {
+  background: var(--color-primary);
+  backdrop-filter: blur(8px);
+}
+
+#nav-title {
+  color: var(--color-dark);
+}
+
+.nav-link {
+  color: var(--color-dark);
+}
+
+#mobile-menu-btn {
+  color: var(--color-dark);
+}
+
+#mobile-menu a {
+  color: var(--color-dark);
+}
+
+/* Hero Section */
+header {
+  background-color: var(--color-primary);
+  min-height: 600px;
+  padding-top: 100px;
+}
+
+header svg path {
+  fill: var(--color-light);
+  stroke: var(--color-primary);
+}
+
+header svg circle {
+  stroke: var(--color-primary);
+}
+
+#hero-title {
+  color: var(--color-dark);
+}
+
+#hero-tagline {
+  color: var(--color-dark);
+}
+
+#hero-dates {
+  color: var(--color-dark);
+}
+
+.hero-edition-badge {
+  background: var(--color-primary);
+  color: var(--color-dark);
+}
+
+/* Countdown */
+.countdown-box {
+  background: var(--color-white);
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+  color: var(--color-dark);
+}
+
+.countdown-label {
+  color: var(--color-divider);
+}
+
+#registrations-closed {
+  color: var(--color-primary);
+}
+
+/* Trees */
+.trees-row {
+  color: var(--color-accent-lightest);
+}
+
+/* Wave divider */
+.wave-divider {
+  display: block;
+}
+
+.wave-divider path {
+  fill: var(--color-white);
+}
+
+
+.section-primary {
+    background: var(--color-primary);
+
+    h2 {
+      color: var(--color-dark);
+    }
+
+    .subtitle {
+      color: var(--color-dark);
+    }
+
+    .divider {
+      background: var(--color-white);
+    }
+
+    .card {
+      background: var(--color-white);
+      border-color: var(--color-white);
+    }
+    .card h3 {
+      color: var(--color-dark);
+    }
+    .card p {
+      color: var(--color-text);
+    }
+
+    button {
+      background: var(--color-dark-bg);
+      opacity: 0.7;
+      color: var(--color-light);
+    }
+}
+
+.section-white {
+    background: var(--color-white);
+
+    h2 {
+      color: var(--color-dark);
+    }
+
+    .subtitle {
+      color: var(--color-text);
+    }
+
+    .divider {
+      background: var(--color-primary);
+    }
+
+    .divider-icon {
+      font-size: 1.25rem;
+    }
+
+    .card {
+      background: var(--color-dark);
+      border-color: var(--color-dark);
+      box-shadow: var(--box-shadow);
+    }
+    .card-icon {
+      background: var(--color-primary);
+    }
+    .card-icon i {
+      color: var(--color-primary);
+    }
+    .card h3 {
+      color: var(--color-primary);
+    }
+    .card p {
+      color: var(--color-text-light);
+    }
+
+    .info-card-primary {
+      color: var(--color-primary);
+    }
+
+    .info-card-secondary {
+      color: var(--color-white);
+    }
+}
+
+
+
+
+/* Footer */
+footer {
+  background: var(--color-dark);
+}
+
+footer p {
+  color: var(--color-primary);
+}
+
+#contact-cta {
+  background: var(--color-primary);
+  color: var(--color-dark);
+}
+
+.contact-email {
+  color: rgba(232, 220, 200, 0.6);
+}
+
+/* Icon Styles */
+i[data-lucide="menu"] {
+  width: 24px;
+  height: 24px;
+}
+
+i[data-lucide="calendar"],
+i[data-lucide="map-pin"],
+i[data-lucide="users"],
+i[data-lucide="backpack"],
+i[data-lucide="mail"] {
+  width: 20px;
+  height: 20px;
+}
+
+i[data-lucide="mail"] {
+  width: 18px;
+  height: 18px;
+}
+
+/* SVG Styles */
+svg[viewbox="0 0 200 200"] {
+  transform: translate(50px, -50px);
+}
+
+svg path {
+  stroke-width: 1;
+}
+
+svg circle {
+  stroke-width: 1;
+}
+
+/* Divider Leaf */
+.divider-leaf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.divider-line {
+  background: var(--color-white);
+  flex: 0 0 60px;
+  height: 1px;
+}
+
+/* Button Styles */
+.btn-scout {
+  display: inline-block;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 2.5rem;
+  transition: all 0.3s ease;
+  color: var(--color-light);
+  background-color: var(--color-dark-bg);
+}
+
+.btn-scout:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Card Hover */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero CTA */
+#hero-cta {
+  background: var(--color-primary);
+  color: var(--color-dark);
+}
+
+/* Animations */
+.anim-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.anim-fade-up {
+  animation: fadeUp 0.8s ease-out;
+}
+
+.anim-scale-in {
+  animation: scaleIn 0.8s ease-out;
+}
+
+.anim-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+.programme-item {
+  background: var(--color-dark-light); 
+  border-left-color: var(--color-dark);
+}
+
+.branche-section {
+  background:var(--color-white); 
+  box-shadow: 0 4px 20px rgba(27,54,29,0.08);
+}
+
+.branche-neccessity {
+  background: var(--color-dark-light);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Delay Classes */
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+.delay-4 {
+  animation-delay: 0.8s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    min-height: auto;
+    padding-top: 80px;
+  }
+
+  #hero-title {
+    font-size: 2rem;
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+  }
+}

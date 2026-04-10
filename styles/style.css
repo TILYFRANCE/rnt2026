@@ -128,3 +128,21 @@ html, body { height: 100%; margin: 0; }
     }
 
     body { box-sizing: border-box; }
+
+    .table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #000; /* ou #ccc pour plus léger */
+
+    }
+
+    .table tbody tr:hover {
+      background: #f7f7f7;
+    }
+    .table th, td {
+      border: 1px solid #000; /* ou #ccc pour plus léger */
+      padding: 8px;
+    }

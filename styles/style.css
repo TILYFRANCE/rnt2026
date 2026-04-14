@@ -240,3 +240,59 @@ footer {
   display: flex;
   justify-content: center;
 }
+/* Galerie équipe */
+
+.team-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.team-photo {
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.team-photo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .team-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .team-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .team-photo img {
+    height: 200px;
+  }
+}
+
+/* Petit mobile */
+@media (max-width: 480px) {
+  .team-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .team-photo img {
+    height: 240px;
+  }
+}

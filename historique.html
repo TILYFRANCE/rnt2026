@@ -132,16 +132,66 @@
       }
 
       .history-scroll {
+        overflow-x: visible;
         padding: 1rem;
       }
 
       .history-table {
-        min-width: 720px;
+        min-width: 0;
+        border-spacing: 0;
       }
 
-      .history-table thead th,
+      .history-table thead {
+        display: none;
+      }
+
+      .history-table,
+      .history-table tbody,
+      .history-table tr,
+      .history-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .history-table tbody tr {
+        margin-bottom: 1rem;
+        filter: none;
+      }
+
       .history-table td {
         padding: 0.9rem 1rem;
+        border-radius: 0 !important;
+      }
+
+      .history-table td:first-child {
+        border-radius: 1rem 1rem 0 0 !important;
+      }
+
+      .history-table td:last-child {
+        border-radius: 0 0 1rem 1rem !important;
+      }
+
+      .history-table td:nth-child(2),
+      .history-table td:nth-child(3) {
+        display: grid;
+        gap: 0.3rem;
+      }
+
+      .history-table td:nth-child(2)::before,
+      .history-table td:nth-child(3)::before {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #6b7c6c;
+      }
+
+      .history-table td:nth-child(2)::before {
+        content: "Date";
+      }
+
+      .history-table td:nth-child(3)::before {
+        content: "Lieu";
       }
     }
   </style>
@@ -198,59 +248,52 @@
       <th>Année</th>
       <th>Date</th>
       <th>Lieu</th>
-      <th>Fait marquant</th>
     </tr>
    </thead>
    <tbody>
-  <tr><td><span class="history-year">2025</span></td><td class="history-date">26-27/04/2025</td><td class="history-place">Domaine de Peyreguilhot, 47260 Laparade</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2025</span></td><td class="history-date">26-27 avril</td><td class="history-place">Domaine de Peyreguilhot, 47260 Laparade</td></tr>
  
-  <tr><td><span class="history-year">2024</span></td><td class="history-date">Camp 100e</td><td class="history-place">Chaponost</td><td class="history-note">Pas de RNT au printemps, car l'édition était rattachée au camp jubilé des 100 ans des Tily.</td></tr>
+  <tr><td><span class="history-year">2024</span></td><td class="history-date">Camp 100e</td><td class="history-place">Chaponost</td></tr>
  
-  <tr><td><span class="history-year">2023</span></td><td class="history-date">29/04 - 01/05</td><td class="history-place">Lycée Don Bosco - Les Cours, 61210 Giel-Courteilles</td><td class="history-note">1ère RNT de 3 jours dans un lycée, et première année avec la création du sous-camp parents pour leur permettre de vivre pleinement la RNT.</td></tr>
+  <tr><td><span class="history-year">2023</span></td><td class="history-date">29 avril - 01 mai</td><td class="history-place">Lycée Don Bosco - Les Cours, 61210 Giel-Courteilles</td></tr>
  
-  <tr><td><span class="history-year">2022</span></td><td class="history-date">23/04-24/04</td><td class="history-place">Hameau de Becours, 12520 Verrières, France</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2022</span></td><td class="history-date">23 avril - 24 avril</td><td class="history-place">Hameau de Becours, 12520 Verrières, France</td></tr>
  
-  <tr><td><span class="history-year">2021</span></td><td class="history-date">17/04 - 18/04</td><td class="history-place">En ligne</td><td class="history-note">Toujours en ligne, cette édition a proposé un grand jeu sur le thème du tour du monde, préparé par l'Équipe Nationale, pour une expérience ludique et immersive à travers différentes cultures.</td></tr>
+  <tr><td><span class="history-year">2021</span></td><td class="history-date">17 avril - 18 avril</td><td class="history-place">En ligne</td></tr>
  
-  <tr><td><span class="history-year">2020</span></td><td class="history-date">18/04 - 19/04</td><td class="history-place">En ligne</td><td class="history-note">En raison du confinement, cette édition s'est déroulée en ligne avec activités et menus partagés, rassemblant 350 participants malgré la distance.</td></tr>
+  <tr><td><span class="history-year">2020</span></td><td class="history-date">18 avril - 19 avril</td><td class="history-place">En ligne</td></tr>
  
-  <tr><td><span class="history-year">2019</span></td><td class="history-date">13/04 - 14/04</td><td class="history-place">Hameau de Becours, 12520 Verrières, France</td><td class="history-note">Cette édition a été la première à fonctionner avec des sous-camps autonomes, apportant une nouvelle dynamique d'organisation et de gestion.</td></tr>
+  <tr><td><span class="history-year">2019</span></td><td class="history-date">13 avril - 14 avril</td><td class="history-place">Hameau de Becours, 12520 Verrières, France</td></tr>
  
-  <tr><td><span class="history-year">2018</span></td><td class="history-date">21/04 - 22/04</td><td class="history-place">Château du Breuil, 142 rue du Creusot - 71670 Le Breuil</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2018</span></td><td class="history-date">21 avril - 22 avril</td><td class="history-place">Château du Breuil, 142 rue du Creusot - 71670 Le Breuil</td></tr>
  
-  <tr><td><span class="history-year">2017</span></td><td class="history-date">08/04 - 09/04</td><td class="history-place">Saint-Joseph d'Allex - Montée de la Butte, 26400 Allex</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2017</span></td><td class="history-date">08 avril - 09 avril</td><td class="history-place">Saint-Joseph d'Allex - Montée de la Butte, 26400 Allex</td></tr>
  
-  <tr><td><span class="history-year">2016</span></td><td class="history-date">30/04 - 01/05</td><td class="history-place">Centre EEDF « Les Trembles », 69470 Ranchal-le-Bourg</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2016</span></td><td class="history-date">30 avril - 01 mai</td><td class="history-place">Centre EEDF « Les Trembles », 69470 Ranchal-le-Bourg</td></tr>
  
-  <tr><td><span class="history-year">2015</span></td><td class="history-date">25/04 - 26/04</td><td class="history-place">Centre Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2015</span></td><td class="history-date">25 avril - 26 avril</td><td class="history-place">Centre Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td></tr>
  
-  <tr><td><span class="history-year">2014</span></td><td class="history-date">Camp 90e</td><td class="history-place">Château du Breuil, 142 rue du Creusot - 71670 Le Breuil</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2014</span></td><td class="history-date">Camp 90e</td><td class="history-place">Château du Breuil, 142 rue du Creusot - 71670 Le Breuil</td></tr>
  
-  <tr><td><span class="history-year">2013</span></td><td class="history-date">27/04 - 28/04</td><td class="history-place">Centre de retraite des Pères Lazaristes, 7 rue du Baron de Nivière, 91140 Villebon-sur-Yvette</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2013</span></td><td class="history-date">27 avril - 28 avril</td><td class="history-place">Centre de retraite des Pères Lazaristes, 7 rue du Baron de Nivière, 91140 Villebon-sur-Yvette</td></tr>
  
-  <tr><td><span class="history-year">2012</span></td><td class="history-date">14/04 - 15/04</td><td class="history-place">Centre d'accueil "Les Térébinthes" - Domaine du Narais, 72250 Parigné-l'Évêque</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2012</span></td><td class="history-date">14 avril - 15 avril</td><td class="history-place">Centre d'accueil "Les Térébinthes" - Domaine du Narais, 72250 Parigné-l'Évêque</td></tr>
  
-  <tr><td><span class="history-year">2011</span></td><td class="history-date">30/04 - 01/05</td><td class="history-place">Centre d'accueil "Les Térébinthes" - Domaine du Narais, 72250 Parigné-l'Évêque</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2011</span></td><td class="history-date">30 avril - 01 mai</td><td class="history-place">Centre d'accueil "Les Térébinthes" - Domaine du Narais, 72250 Parigné-l'Évêque</td></tr>
  
-  <tr><td><span class="history-year">2010</span></td><td class="history-date">17/04 - 18/04</td><td class="history-place">Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2010</span></td><td class="history-date">17 avril - 18 avril</td><td class="history-place">Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td></tr>
  
-  <tr><td><span class="history-year">2009</span></td><td class="history-date">25/04 - 26/04</td><td class="history-place">Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2009</span></td><td class="history-date">25 avril - 26 avril</td><td class="history-place">Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td></tr>
  
-  <tr><td><span class="history-year">2008</span></td><td class="history-date">19/04 - 20/04</td><td class="history-place">Gardanne</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2008</span></td><td class="history-date">19 avril - 20 avril</td><td class="history-place">Gardanne</td></tr>
  
-  <tr><td><span class="history-year">2007</span></td><td class="history-date">28/04 - 29/04</td><td class="history-place">Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2007</span></td><td class="history-date">28 avril - 29 avril</td><td class="history-place">Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td></tr>
  
-  <tr><td><span class="history-year">2006</span></td><td class="history-date">22/04 - 23/04</td><td class="history-place">Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2006</span></td><td class="history-date">22 avril - 23 avril</td><td class="history-place">Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td></tr>
  
-  <tr><td><span class="history-year">2005</span></td><td class="history-date">23/04 - 24/04</td><td class="history-place">Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2005</span></td><td class="history-date">23 avril - 24 avril</td><td class="history-place">Villages Vacances L'Orée du Bois, Saint-Martin-en-Haut (69850)</td></tr>
  
-  <tr><td><span class="history-year">2004</span></td><td class="history-date">Pas de RNT</td><td class="history-place"><span class="history-empty">-</span></td><td class="history-note"><span class="history-empty">Aucune édition organisée</span></td></tr>
- 
-  <tr><td><span class="history-year">2003</span></td><td class="history-date">Pas de RNT</td><td class="history-place"><span class="history-empty">-</span></td><td class="history-note"><span class="history-empty">Aucune édition organisée</span></td></tr>
- 
-  <tr><td><span class="history-year">2002</span></td><td class="history-date">Pas de RNT</td><td class="history-place"><span class="history-empty">-</span></td><td class="history-note"><span class="history-empty">Aucune édition organisée</span></td></tr>
- 
-  <tr><td><span class="history-year">2001</span></td><td class="history-date">17/02 - 18/02</td><td class="history-place">Aix-en-Provence</td><td class="history-note"><span class="history-empty">Pas de fait marquant renseigné</span></td></tr>
+  <tr><td><span class="history-year">2001</span></td><td class="history-date">17 février - 18 février</td><td class="history-place">Aix-en-Provence</td></tr>
  </tbody>
  </table>
         </div>
@@ -260,7 +303,7 @@
      </div>
     </main>
     <footer class="py-2 px-1 text-center">
-      <img class="ml-12" src="img/banniere.png" style="width:80%; height:auto;" />
+      <img class="mx-auto" src="img/banniere.png" style="width:80%; height:auto;" />
     </footer>
     </div>
     <script>

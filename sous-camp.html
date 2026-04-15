@@ -10,6 +10,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&amp;family=Source+Sans+3:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/style-generated.css">
+  <style>
+    .collapsible-trigger {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      gap: 1rem;
+      background: #ffffff !important;
+      color: #1b361d;
+      border: 0;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .collapsible-chevron {
+      flex-shrink: 0;
+      font-size: 1.125rem;
+      line-height: 1;
+      transition: transform 0.2s ease;
+    }
+
+    .branche-section.is-collapsed .collapsible-chevron {
+      transform: rotate(-90deg);
+    }
+
+    .packing-note-badge {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.35rem 0.8rem;
+      border-radius: 9999px;
+      border: 1px solid #8fae8b;
+      background: #eef6ec;
+      color: #2f4d31;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+  </style>
   <script src="_sdk/data_sdk.js" type="text/javascript"></script>
   <script src="_sdk/script.js" type="text/javascript"></script>
 </head>
@@ -46,7 +85,7 @@
     </nav>
     <!-- Hero Section -->
     <main>
-      <!-- Notre camp Section -->
+      <!-- BC -->
       <section id="about" class="scroll-section py-20 md:py-28 px-6 section-white">
         <div class="max-w-5xl mx-auto">
           <div class="text-center mb-14">
@@ -56,10 +95,13 @@
               <span class="divider-line"></span>
             </div>
             <h2 id="about-title" class="font-heading font-bold text-3xl md:text-5xl mb-6">La Branche Cadette : Sous le multivers d’EPHPHATHA</h2>
-            <p id="about-text" class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">Du 1e au 3 mai, les louveteaux et louvettes Tily de toute la France plongent dans le Multivers EPHPHATHA : chaque meute arrive avec son propre univers : pirates, astronautes, guerriers mayas, bisounours, jouets ou voyageurs dans le temps. Ensemble, ils doivent retrouver les fragments d'une pierre brisée qui menace l'équilibre de tous les mondes. Une aventure où la diversité de chacun devient la force du groupe.</p>
+            <p id="about-text" class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">Du 1er au 3 mai, les louveteaux et louvettes des Tily de toute la France plongeront dans le Multivers EPHPHATHA.</br>
+            Chaque meute arrive avec son propre univers : pirates, astronautes, guerriers mayas, bisounours, jouets ou voyageurs dans le temps. Ensemble, ils doivent retrouver les fragments d'une pierre brisée qui menace l'équilibre de tous les mondes. Une aventure où la diversité de chacun devient la force du groupe.</p>
             </div>
             <section class="rounded-2xl p-10 branche-section">
               <h2 class="font-heading font-bold text-3xl mb-6" style="color:#1b361d;">Affaires à emporter pour les louveteaux.ttes</h2>
+              <p class="packing-note-badge">Toutes les affaires sont à étiqueter</p>
+              
               <div class="grid md:grid-cols-2 gap-4">
               <div class="p-4 rounded-lg branche-neccessity">
                 <h3 class="font-heading font-bold mb-3" style="color:#1b361d;">Par enfant : </h3>
@@ -84,7 +126,7 @@
                   <ul class="space-y-2 text-sm" style="color:#3d5a3f;">
                   <li>✓ Tenue correcte : chemise bleue, jean bleu sans motif, ceinture, foulard</li>
                   <li>✓ 1 pull chaud</li>
-                  <li>✓ Chaussure fermée (baskets, ou chaussures de marche,...)</li>
+                  <li>✓ Chaussures fermées (baskets, ou chaussures de marche,...)</li>
                   </ul>
               </div>
               <div class="p-4 rounded-lg branche-neccessity">
@@ -147,7 +189,7 @@
               </div>
             </section>
       </section>
-      <!-- Les chiffres clés -->
+      <!-- BM -->
       <section class="scroll-section py-20 md:py-28 px-6 section-primary">
         <div class="max-w-5xl mx-auto">
           <div class="text-center mb-14">
@@ -157,7 +199,8 @@
               <span class="divider-line"></span>
             </div>
             <h2 class="font-heading font-bold text-3xl md:text-5xl mb-4">La Branche Moyenne : EPHPHATHA</h2>
-            <p id="about-text" class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">Le programme ? C'est une escale surprise ! On a décidé de ne pas vous donner d'itinéraire pour mieux vous laisser porter par l'aventure. On a hâte de voir vos têtes de voyageurs émerveillées !</p>
+            <p id="about-text" class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">Le programme ? C'est une escale surprise ! On a décidé de ne pas vous donner d'itinéraire pour mieux vous laisser porter par l'aventure. </br>
+              On a hâte de voir vos têtes de voyageurs émerveillées !</p>
           </div>
             <section class="rounded-2xl p-10 branche-section">
               <h2 class="font-heading font-bold text-3xl mb-6" style="color:#1b361d;">Affaires à emporter pour les éclais</h2>
@@ -211,7 +254,7 @@
               </div>
             </section>
       </section>
-      <!-- Au programme -->
+      <!-- BA -->
       <section class="scroll-section py-20 md:py-28 px-6 section-white">
         <div class="max-w-5xl mx-auto">
           <div class="text-center mb-14">
@@ -238,6 +281,8 @@
                 <li>✓ 1 K-way /  imperméable</li>
                 <li>✓ 1 casquette / chapeau</li>
                 <li>✓ 1 pyjama chaud</li>
+                <li>✓ 1 paire de chaussures fermées (baskets, ou chaussures de marche,...)</li>
+                <li class="font-bold">✓ 1 déguisement/accessoire dans le thème médiéval fantastique</li>
                 <li>✓ Le nécessaire pour la toilette</li>
                 <li>✓ 1 petite serviette de bain</li>
                 <li>✓ 1 gamelle, des couverts, 1 gobelet, 1 gourde</li>
@@ -269,7 +314,7 @@
               <div class="space-y-4">
               <div class="p-4 border-l-4 rounded-lg programme-item">
                 <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Poste d’action : Pédago & Animation</h3>
-                <p style="color:#3d5a3f;"><b>Lamboahara - Lamako, Njara Nicolas - Hasim-pahazavana, Diana - Capitole, Tsilavina - Capitole</b></div>
+                <p style="color:#3d5a3f;"><b>Lamboara - Lamako, Njara Nicolas - Hasim-pahazavana, Diana - Capitole, Tsilavina - Capitole</b></div>
 
               <div class="p-4 border-l-4 rounded-lg programme-item">
                 <h3 class="font-heading font-bold mb-2" style="color:#1b361d;">Poste d’action : Intendance</h3>
@@ -303,7 +348,7 @@
           <div class="grid md:grid-cols-3 gap-8 mb-10">
             <div class="card-hover rounded-2xl p-8 text-center anim-scale-in card">
               <h3 class="font-heading font-bold text-2xl mb-2">Liste des affaires</h3>
-              <ul class="text-sm leading-relaxed">
+              <ul class="text-sm leading-relaxed text-left">
                 <li>- Des vêtements chauds, adaptés à la météo</li>
                 <li>- Une gamelle et des couverts</li>
                 <li>- Une trousse de toilette et serviette de bains, tong si besoins</li>
@@ -337,7 +382,7 @@
     </main>
     <!-- Footer -->
     <footer class="py-2 px-1 text-center">
-      <img class="ml-12" src="img/banniere.png" style="width:80%; height:auto;" />
+      <img class="mx-auto" src="img/banniere.png" style="width:80%; height:auto;" />
     </footer>
   </div>
   <script>
@@ -389,6 +434,48 @@
         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
+
+    function setupCollapsibleSections() {
+      document.querySelectorAll('.branche-section').forEach((section, index) => {
+        const title = section.querySelector(':scope > h2');
+        if (!title) return;
+
+        const contentBlocks = Array.from(section.children).filter((el) => el !== title);
+        if (contentBlocks.length === 0) return;
+
+        const contentId = `branche-content-${index + 1}`;
+        const body = document.createElement('div');
+        body.id = contentId;
+        body.className = 'collapsible-content';
+
+        contentBlocks.forEach((block) => body.appendChild(block));
+        section.appendChild(body);
+
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'collapsible-trigger';
+        button.setAttribute('aria-expanded', 'true');
+        button.setAttribute('aria-controls', contentId);
+
+        title.parentNode.insertBefore(button, title);
+        button.appendChild(title);
+
+        const chevron = document.createElement('span');
+        chevron.className = 'collapsible-chevron';
+        chevron.setAttribute('aria-hidden', 'true');
+        chevron.textContent = '▾';
+        button.appendChild(chevron);
+
+        button.addEventListener('click', () => {
+          const isExpanded = button.getAttribute('aria-expanded') === 'true';
+          button.setAttribute('aria-expanded', String(!isExpanded));
+          body.hidden = isExpanded;
+          section.classList.toggle('is-collapsed', isExpanded);
+        });
+      });
+    }
+
+    setupCollapsibleSections();
 
     function applyConfig(config) {
       const bg = config.background_color || defaultConfig.background_color;
